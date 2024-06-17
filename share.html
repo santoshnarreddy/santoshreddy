@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Share - Rover</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="share_style.css"> <!-- Custom CSS for page styling -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">Rover</div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Share Section -->
+    <section class="share-section">
+        <div class="max-width">
+            <h2>Share Your Favorite Place</h2>
+            <form id="share-form" enctype="multipart/form-data">
+                <!-- Upload Box -->
+                <div class="upload-box" id="upload-box">
+                    <button type="button" id="browse-button">Browse</button>
+                    <input type="file" id="image-upload" name="image" accept="image/*" required style="display: none;">
+                    <div class="image-preview" id="image-preview"></div> <!-- Display selected image -->
+                </div>
+
+                <!-- Description Box -->
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" rows="5" required></textarea>
+                </div>
+
+                <!-- Location Link Box -->
+                <div class="form-group">
+                    <label for="location-link">Location (Google Maps Link)</label>
+                    <input type="url" id="location-link" name="location-link" placeholder="https://maps.google.com/" required>
+                </div>
+                <!-- Place name Box -->
+                <div class="form-group">
+                    <label for="Name">PLACE NAME</label>
+                    <textarea id="place name" name="place name" rows="1" required></textarea>
+                </div>
+
+
+                <!-- Button Group -->
+                <div class="button-group">
+                    <button type="button" id="edit-button">Edit</button>
+                    <button type="submit">Post</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span>Created by Rover Team | <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="share_script.js"></script>
+</body>
+</html>

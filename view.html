@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View - Rover</title>
+    <link rel="stylesheet" href="view_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">Rover</div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- View Section -->
+    <section class="view-section">
+        <div class="max-width">
+            <h2>Explore Shared Places</h2>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search by place name">
+                <button id="search-button">Find</button>
+            </div>
+
+            <!-- Gallery of Shared Places -->
+            <div class="gallery">
+                <!-- Example of a Shared Item with Comments Section -->
+                <div class="gallery-item">
+                    <img src="example.jpg" alt="Example Place">
+                    <div class="info">
+                        <h3>Example Place</h3>
+                        <p>A beautiful location to visit.</p>
+                        <div class="actions">
+                            <button class="like-button"><i class="fas fa-thumbs-up"></i> 12</button>
+                            <button class="comment-toggle"><i class="fas fa-comments"></i> Show Comments</button>
+                            <a href="https://maps.google.com/" class="location-link"><i class="fas fa-map-marker-alt"></i> Location</a>
+                        </div>
+                    </div>
+
+                    <!-- Comment Section -->
+                    <div class="comments" style="display: none;">
+                        <div class="comment-list">
+                            <div class="comment">
+                                <strong>John:</strong> Great place to visit!
+                            </div>
+                            <div class="comment">
+                                <strong>Jane:</strong> I had a wonderful time here.
+                            </div>
+                        </div>
+
+                        <!-- New Comment Form -->
+                        <div class="new-comment">
+                            <textarea id="new-comment" placeholder="Write a comment..." rows="2"></textarea>
+                            <button class="post-comment-button">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More Button for Pagination -->
+            <div class="pagination">
+                <button id="view-more-button">View More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <span>Created by Rover Team | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
+    </footer>
+
+    <script src="view_script.js"></script>
+</body>
+</html>

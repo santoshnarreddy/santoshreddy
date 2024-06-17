@@ -1,0 +1,154 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background color */
+}
+
+.max-width {
+    max-width: 1200px; /* Maximum width for responsiveness */
+    margin: 0 auto; /* Center content */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #333; /* Dark background */
+    padding: 15px 0; /* Padding for navbar */
+}
+
+.navbar .max-width {
+    display: flex;
+    justify-content: space-between; /* Align logo and menu */
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px; /* Font size for logo */
+    font-weight: bold; /* Bold logo */
+    color: white; /* White text color */
+}
+
+.navbar .menu {
+    list-style: none; /* Remove list bullets */
+    display: flex;
+    gap: 15px; /* Spacing between menu items */
+}
+
+.navbar .menu a {
+    text-decoration: none; /* No underline */
+    color: white; /* White text color */
+    transition: color 0.3s; /* Smooth hover effect */
+}
+
+.navbar .menu a:hover {
+    color: #ccc; /* Change color on hover */
+}
+
+/* Share Section Styles */
+.share-section {
+    padding: 50px 0; /* Padding around section */
+    text-align: center; /* Center text */
+}
+
+.upload-box {
+    border: 2px dashed #333; /* Dashed border */
+    background-color: #f5f5f5; /* Light background for contrast */
+    padding: 30px; /* Padding around content */
+    width: 400px; /* Width of upload box */
+    height: 300px; /* Height of upload box */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    flex-direction: column; /* Stack content vertically */
+    transition: all 0.3s; /* Transition for hover effects */
+}
+
+.upload-box:hover {
+    border-color: #555; /* Change border color on hover */
+}
+
+#browse-button {
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px 30px; /* Padding for button */
+    cursor: pointer; /* Show that it's clickable */
+}
+
+#image-preview {
+    display: none; /* Hidden by default */
+    margin-top: 20px; /* Space above the preview */
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.form-group {
+    text-align: left; /* Align text to the left */
+    margin-top: 20px; /* Space between form groups */
+}
+
+textarea, input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for comfort */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Readable font size */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around; /* Even space between buttons */
+    margin-top: 30px; /* Space above the button group */
+}
+
+.button-group button {
+    padding: 10px 20px; /* Padding for button */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Show that it's clickable */
+}
+
+.button-group button:hover {
+    background-color: #555; /* Darker on hover */
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center; /* Centered text */
+    padding: 20px; /* Padding around footer */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+}
+/* Popup Notification Styles */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000; /* Keep the popup above other elements */
+}
+
+.popup-content {
+    text-align: center;
+}
+
+#popup-close {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#popup-close:hover {
+    background-color: #555;
+}
